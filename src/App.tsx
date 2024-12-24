@@ -1,8 +1,18 @@
-import NavBar from "./components/NavBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Photography from "./pages/Photography";
+import Programming from "./pages/Programming";
+
 function App() {
   return (
     <div>
-      <NavBar active={0}></NavBar>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>}/>
+          <Route path="/photography" element={<Photography/>} />
+          <Route path="/programming" element={<Programming/>} /> 
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

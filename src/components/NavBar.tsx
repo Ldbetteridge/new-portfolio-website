@@ -4,9 +4,9 @@ interface Props {
 
 const NavBar = ({ active }: Props) => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+    <div >
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a className="navbar-brand" href="/">
           Portfolio
         </a>
         <button
@@ -23,17 +23,17 @@ const NavBar = ({ active }: Props) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className={active === 0 ? "nav-item active" : "nav-item"}>
-              <a className="nav-link" href="index.html">
+              <a className="nav-link" href="/">
                 Home
               </a>
             </li>
             <li className={active === 1 ? "nav-item active" : "nav-item"}>
-              <a className="nav-link" href="photography.html">
+              <a className="nav-link" href="/photography">
                 Photography
               </a>
             </li>
             <li className={active === 2 ? "nav-item active" : "nav-item"}>
-              <a className="nav-link" href="programming.html">
+              <a className="nav-link" href="/programming">
                 Programming
               </a>
             </li>
